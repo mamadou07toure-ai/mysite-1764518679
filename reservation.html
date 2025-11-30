@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - Les Délices en Guinée</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-amber-50">
+    <custom-header></custom-header>
+
+    <main class="pt-24 pb-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
+                    <div class="md:flex">
+                        <!-- Form Section -->
+                        <div class="md:w-1/2 p-8">
+                            <h1 class="text-4xl font-bold font-serif text-gray-900 mb-2">Réserver une Table</h1>
+                            <p class="text-gray-600 mb-8">Garantissez votre expérience culinaire exceptionnelle</p>
+                            
+                            <form id="reservationForm" class="space-y-6">
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label class="block text-gray-700 font-semibold mb-2">Nom complet *</label>
+                                        <input type="text" name="name" required class="w-full form-input px-4 py-3 rounded-lg">
+                                    </div>
+                                    <div>
+                                        <label class="block text-gray-700 font-semibold mb-2">Téléphone *</label>
+                                        <input type="tel" name="phone" required class="w-full form-input px-4 py-3 rounded-lg">
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-gray-700 font-semibold mb-2">Email</label>
+                                    <input type="email" name="email" class="w-full form-input px-4 py-3 rounded-lg">
+                                </div>
+                                
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label class="block text-gray-700 font-semibold mb-2">Date de réservation *</label>
+                                    <input type="date" name="date" required class="w-full form-input px-4 py-3 rounded-lg">
+                                    </div>
+                                    <div>
+                                        <label class="block text-gray-700 font-semibold mb-2">Heure *</label>
+                                        <input type="time" name="time" required class="w-full form-input px-4 py-3 rounded-lg">
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-gray-700 font-semibold mb-2">Nombre de personnes *</label>
+                                        <select name="guests" required class="w-full form-input px-4 py-3 rounded-lg">
+                                            <option value="1">1 personne</option>
+                                            <option value="2">2 personnes</option>
+                                            <option value="3">3 personnes</option>
+                                            <option value="4">4 personnes</option>
+                                            <option value="5">5 personnes</option>
+                                            <option value="6">6 personnes</option>
+                                            <option value="7">7 personnes</option>
+                                            <option value="8">8 personnes</option>
+                                            <option value="9">9 personnes</option>
+                                            <option value="10">10 personnes ou plus</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div>
+                                        <label class="block text-gray-700 font-semibold mb-2">Message supplémentaire</label>
+                                        <textarea name="message" rows="4" class="w-full form-input px-4 py-3 rounded-lg" placeholder="Allergies, occasion spéciale..."></textarea>
+                                    </div>
+                                    
+                                    <button type="submit" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-semibold py-4 px-6 rounded-lg transition duration-300 transform hover:scale-105">
+                                        Confirmer la réservation
+                                    </button>
+                                    
+                                    <p class="text-sm text-gray-500 text-center">Votre réservation sera confirmée via WhatsApp</p>
+                                </form>
+                            </div>
+                            
+                            <!-- Info Section -->
+                            <div class="md:w-1/2 bg-gradient-to-br from-amber-600 to-amber-800 text-white p-8">
+                                <div class="h-full flex flex-col justify-center">
+                                    <h2 class="text-3xl font-bold font-serif mb-6">Pourquoi nous choisir ?</h2>
+                                <div class="space-y-6">
+                                    <div class="flex items-start space-x-4">
+                                        <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mt-1">
+                                            <i data-feather="star" class="w-6 h-6"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold text-lg">Ambiance Élégante</h3>
+                                        <p class="text-amber-100">Cadre raffiné alliant design africain contemporain et chaleur traditionnelle</p>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mt-1">
+                                                <i data-feather="users" class="w-6 h-6"></i>
+                                            </div>
+                                            <div>
+                                                <h3 class="font-semibold text-lg">Service Premium</h3>
+                                            <p class="text-amber-100">Équipe dévouée pour une expérience culinaire mémorable</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start space-x-4">
+                                        <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mt-1">
+                                                    <i data-feather="clock" class="w-6 h-6"></i>
+                                                </div>
+                                                <div>
+                                                    <h3 class="font-semibold text-lg">Produits Frais</h3>
+                                    <p class="text-amber-100">Ingrédients sélectionnés avec soin pour garantir fraîcheur et authenticité</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <custom-footer></custom-footer>
+
+            <script src="components/header.js"></script>
+            <script src="components/footer.js"></script>
+            <script src="script.js"></script>
+            <script>
+                feather.replace();
+                
+                // Set minimum date to today
+                const today = new Date().toISOString().split('T')[0];
+                document.querySelector('input[name="date"]').min = today;
+            </script>
+        </body>
+        </html>
