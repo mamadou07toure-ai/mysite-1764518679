@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Délices en Guinée - Restaurant Guinéen Premium</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-amber-50">
+    <!-- Header Component -->
+    <custom-header></custom-header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center">
+        <div class="absolute inset-0 bg-black/40 z-10"></div>
+        <img src="http://static.photos/food/1920x1080/1" alt="Restaurant Les Délices en Guinée" class="absolute inset-0 w-full h-full object-cover">
+        <div class="relative z-20 text-center text-white px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 font-serif">Les Délices en Guinée</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Une expérience culinaire authentique où les saveurs de la Guinée rencontrent l'élégance moderne</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="reservation.html" class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition duration-300 transform hover:scale-105">
+                    Réserver une table
+                </a>
+                <a href="menu.html" class="bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-lg font-semibold text-lg backdrop-blur-sm transition duration-300 transform hover:scale-105">
+                    Découvrir le menu
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="clock" class="text-amber-600 w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Horaires Flexibles</h3>
+                    <p class="text-gray-600">Ouvert du lundi au dimanche de 11h à 23h</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="map-pin" class="text-amber-600 w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Centre Ville</h3>
+                    <p class="text-gray-600">Emplacement privilégié au cœur de la ville</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="award" class="text-amber-600 w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Cuisine Certifiée</h3>
+                    <p class="text-gray-600">Produits frais et recettes authentiques</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Preview -->
+    <section class="py-20 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 font-serif">Nos Spécialités</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition duration-300">
+                    <img src="http://static.photos/food/640x360/2" alt="Poulet Yassa" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Poulet Yassa</h3>
+                        <p class="text-gray-600 mb-4">Poulet mariné aux oignons et citron, accompagné de riz</p>
+                        <span class="text-amber-600 font-bold text-lg">25 000 FG</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition duration-300">
+                    <img src="http://static.photos/food/640x360/3" alt="Mafé Guinéen" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Mafé Guinéen</h3>
+                        <p class="text-gray-600 mb-4">Ragoût de viande dans une sauce aux arachides</p>
+                        <span class="text-amber-600 font-bold text-lg">28 000 FG</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition duration-300">
+                    <img src="http://static.photos/food/640x360/4" alt="Thiakry" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Thiakry</h3>
+                        <p class="text-gray-600 mb-4">Dessert traditionnel à base de mil et de lait caillé</p>
+                        <span class="text-amber-600 font-bold text-lg">8 000 FG</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="menu.html" class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition duration-300 inline-block">
+                    Voir le menu complet
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <custom-footer></custom-footer>
+
+    <!-- Web Components -->
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
